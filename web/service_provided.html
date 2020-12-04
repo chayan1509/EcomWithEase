@@ -1,0 +1,288 @@
+<style>
+    .new-section{
+        background: #e9f0fd;
+        display: block;
+        padding: 80px 0 80px;
+    }
+    .product-item{
+        position: relative;
+        margin-top: 30px;
+        transition: all 0.5s
+    }
+    .product-item img{
+        width: 100%;
+        height: auto;
+    }
+
+    .product-hover{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: calc(100% - 40px);
+        background: rgba(0, 0, 0, 0.5);
+        top:0;
+        border: 10px solid rgba(255, 255, 255, 0.55);
+        text-align: center;
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+        transition: all 0.5s
+    }
+    .product-item:hover .product-hover{
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+
+    .product-meta{
+        display: block;
+        margin-top: 35%;
+
+    }
+
+    .product-hover a{
+        color: #fff;
+        font-size: 16px;
+        display: inline-block;
+        border: 1px solid #fff;
+        padding: 4.2%;
+        margin: 5px;
+    }
+    .product-hover a i{
+        font-size: 30px;
+    }
+
+    .product-hover a:last-child{
+        font-size: 14px;
+        text-transform: uppercase;
+        display: block;
+        background: #323232;
+        border: 1px solid #fff;
+        margin: 5px 12%
+    }
+    .product-hover a:last-child i{
+        font-size: 18px;
+        margin-right: 5px;
+    }
+    .product-hover a:hover{
+        background: #1abc9c;
+        border: 1px solid #1abc9c
+    }
+
+    .product-title{
+        display: block;
+        background: #323232;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        bottom: 0;
+        height: 40px;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    .product-item:hover .product-title{
+        background:#1abc9c;
+    }
+
+    .product-title h3{
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        float: left;
+        padding: 10px;
+        padding-left: 15px;
+    }
+    .product-title span{
+        display: block;
+        background: rgba(255, 255, 255, 0.5);
+        float: right;
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .sell-meta{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        display: block;
+        width: auto;
+    }
+    .sell-meta a{
+        width: 70px;
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        padding:5px 10px;
+        color: #555252;
+        border: 1px solid #000;
+    }
+    .sell-meta a.new-item{
+        float: left;
+    }
+    .sell-meta a.sell-item{
+        float: right;
+    }
+    .titie-section{
+    margin-bottom: 30px;
+    display: block;
+    position: relative;
+}
+.titie-section h1{
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    color: #515151;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.titie-section h1:before{
+    content: "";
+    width: 165px;
+    display: block;
+    height: 3px;
+    background:#1abc9c;
+    position: absolute;
+    bottom: -16px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.titie-section h1:after{
+    content: "";
+    width: 165px;
+    display: block;
+    height: 3px;
+    background:#1abc9c;
+    position: absolute;
+    bottom: -30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.titie-section:after{
+    content: "";
+    width: 165px;
+    display: block;
+    height: 7px;
+    background:#1abc9c;
+    position: absolute;
+    bottom: -25px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.titie-section.white h1:before{
+    content: "";
+    width: 165px;
+    display: block;
+    height: 3px;
+    background:#fff;
+    position: absolute;
+    bottom: -16px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.titie-section.white h1:after{
+    content: "";
+    width: 165px;
+    display: block;
+    height: 3px;
+    background:#fff;
+    position: absolute;
+    bottom: -30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.titie-section.white:after{
+    content: "";
+    width: 165px;
+    display: block;
+    height: 7px;
+    background:#fff;
+    position: absolute;
+    bottom: -25px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.white-title{
+
+}
+</style>  
+<br>
+<section class="new-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titie-section wow fadeInDown animated ">
+                    <h1>Facilities We Provides</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.2s">
+                <div class="product-item">
+                    <img src="images/1.png" class="img-responsive" width="255" height="322" alt="">
+                    <div class="product-hover">
+                        <div class="product-meta">
+                            
+                            <a href="#"><i class="pe-7s-cart"></i>Car Rental</a>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <a href="#">
+                            <h3>Cars For Hire</h3>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.4s">
+                <div class="product-item">
+                    <img src="images/2.png" class="img-responsive" width="255" height="322" alt="">
+                    <div class="product-hover">
+                        <div class="product-meta">
+                            
+                            <a href="#"><i class="pe-7s-cart"></i>HOUSING</a>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <a href="#">
+                            <h3>GET YOUR DREAM HOUSE</h3>
+                          
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.6s">
+                <div class="product-item">
+                    <img src="images/3.png" class="img-responsive" width="255" height="322" alt="">
+                    <div class="product-hover">
+                        <div class="product-meta">
+                            
+                            <a href="#"><i class="pe-7s-cart"></i>FINANCIAL AIDS</a>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <a href="#">
+                            <h3>FINANCIAL SOLUTIONS</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>

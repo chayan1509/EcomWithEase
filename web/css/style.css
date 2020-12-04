@@ -1,0 +1,130 @@
+.new-section{
+    background: #e9f0fd;
+    display: block;
+    padding: 100px 0 80px;
+}
+.product-item{
+    position: relative;
+    margin-top: 30px;
+    transition: all 0.5s
+}
+.product-item img{
+    width: 100%;
+    height: auto;
+}
+
+.product-hover{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: calc(100% - 40px);
+    background: rgba(0, 0, 0, 0.5);
+    top:0;
+    border: 10px solid rgba(255, 255, 255, 0.55);
+    text-align: center;
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+    transition: all 0.5s
+}
+.product-item:hover .product-hover{
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+.product-meta{
+    display: block;
+    margin-top: 35%;
+
+}
+
+.product-hover a{
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 4.2%;
+    margin: 5px;
+}
+.product-hover a i{
+    font-size: 30px;
+}
+
+.product-hover a:last-child{
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    background: #323232;
+    border: 1px solid #fff;
+    margin: 5px 12%
+}
+.product-hover a:last-child i{
+    font-size: 18px;
+    margin-right: 5px;
+}
+.product-hover a:hover{
+    background: #1abc9c;
+    border: 1px solid #1abc9c
+}
+
+.product-title{
+    display: block;
+    background: #323232;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.product-item:hover .product-title{
+    background:#1abc9c;
+}
+
+.product-title h3{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    float: left;
+    padding: 10px;
+    padding-left: 15px;
+}
+.product-title span{
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    float: right;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.sell-meta{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: block;
+    width: auto;
+}
+.sell-meta a{
+    width: 70px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    padding:5px 10px;
+    color: #555252;
+    border: 1px solid #000;
+}
+.sell-meta a.new-item{
+    float: left;
+}
+.sell-meta a.sell-item{
+    float: right;
+}
