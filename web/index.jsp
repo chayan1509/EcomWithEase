@@ -10,7 +10,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        
+
     </head>
     <body>
         <%@ include file="header.html" %>
@@ -71,6 +71,7 @@
         </div>
 
         <%@include file="service_provided.html" %>
+        
 
     </body>
 </html>
