@@ -1,42 +1,35 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Options Available</title>
+        <title>JSP Page</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        <link rel="stylesheet" href="css/ananyacss/linearicons.css">
-        <link rel="stylesheet" href="css/ananyacss/owl.carousel.css">
-        <link rel="stylesheet" href="css/ananyacss/font-awesome.min.css">
-        <link rel="stylesheet" href="css/ananyacss/themify-icons.css">
-        <link rel="stylesheet" href="css/ananyacss/nice-select.css">
-        <link rel="stylesheet" href="css/ananyacss/nouislider.min.css">
-        <link rel="stylesheet" href="css/ananyacss/bootstrap.css">
-        <link rel="stylesheet" href="css/ananyacss/main.css">
+      
+        <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1mJd75EqIl3zN36hkCartGrrVMpdSpJaI" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
     </head>
     <body>
-        <%@include file="header.html" %>
-
-        <section class="banner-area organic-breadcrumb" style="background:url(images/banner.jpg) center no-repeat; background-size: cover;">
+        <%@include file="header.jsp" %>
+        <section class="banner-area organic-breadcrumb" style="background:url(images/banner.jpg) center no-repeat; background-size: cover; width:100%; height:450px;">
             <div class="container">
-                <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
-                    <div class="col-first">
-                        <h1>Select Your Car: </h1>
-                        <nav class="d-flex align-items-center">
-                            <a href="index-2.html">Home<span class="lnr lnr-arrow-right"></span></a>
-                            <a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-                            <a href="category.html">Fashion Category</a>
-                        </nav>
-                    </div>
-                </div>
+                <center>
+                    <h1 style="font-family:Sofia, sans-serif; color:#eb86a6;">FIND THE RIGHT CAR</h1><br/><br/><br/><br/>
+                    <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan active-cyan-2 mt-2">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-danger btn-rounded btn-sm my-0" type="submit">Search</button>
+                    </form>
+                </center>
             </div>
         </section>
+        <br>
+
 
 
         <div class="container">
@@ -56,13 +49,13 @@
                                 </ul>
                             </li>
                             <li class="main-nav-list"><a data-toggle="collapse" href="#meatFish" aria-expanded="false" aria-controls="meatFish"><span
-                                        class="lnr lnr-arrow-right"></span>Meat and Fish<span class="number">(53)</span></a>
+                                        class="lnr lnr-arrow-right"></span>Sedan</a>
                                 <ul class="collapse" id="meatFish" data-toggle="collapse" aria-expanded="false" aria-controls="meatFish">
-                                    <li class="main-nav-list child"><a href="#">Frozen Fish<span class="number">(13)</span></a></li>
-                                    <li class="main-nav-list child"><a href="#">Dried Fish<span class="number">(09)</span></a></li>
-                                    <li class="main-nav-list child"><a href="#">Fresh Fish<span class="number">(17)</span></a></li>
-                                    <li class="main-nav-list child"><a href="#">Meat Alternatives<span class="number">(01)</span></a></li>
-                                    <li class="main-nav-list child"><a href="#">Meat<span class="number">(11)</span></a></li>
+                                    <li class="main-nav-list child"><a href="#">Honda City</a></li>
+                                    <li class="main-nav-list child"><a href="#">Ciaz</a></li>
+                                    <li class="main-nav-list child"><a href="#">Verna</a></li>
+                                    <li class="main-nav-list child"><a href="#">Honda Civic</a></li>
+                                   
                                 </ul>
                             </li>
                         </ul>
@@ -146,199 +139,67 @@
                         <div class="row">
                             <!-- single product -->
                             <div class="col-lg-4 col-md-6">
-                                <div class="single-product">
-                                    <img class="img-fluid" src="img/product/p1.jpg" alt="">
-                                    <div class="product-details">
-                                        <h6>addidas New Hammer sole
-                                            for Sports person</h6>
-                                        <div class="price">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom">
-
-                                            <a href="#" class="social-info">
-                                                <span class="ti-bag"></span>
-                                                <p class="hover-text">add to bag</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-heart"></span>
-                                                <p class="hover-text">Wishlist</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-sync"></span>
-                                                <p class="hover-text">compare</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-move"></span>
-                                                <p class="hover-text">view more</p>
-                                            </a>
-                                        </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/cars/car.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- single product -->
                             <div class="col-lg-4 col-md-6">
-                                <div class="single-product">
-                                    <img class="img-fluid" src="img/product/p2.jpg" alt="">
-                                    <div class="product-details">
-                                        <h6>addidas New Hammer sole
-                                            for Sports person</h6>
-                                        <div class="price">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom">
-
-                                            <a href="#" class="social-info">
-                                                <span class="ti-bag"></span>
-                                                <p class="hover-text">add to bag</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-heart"></span>
-                                                <p class="hover-text">Wishlist</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-sync"></span>
-                                                <p class="hover-text">compare</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-move"></span>
-                                                <p class="hover-text">view more</p>
-                                            </a>
-                                        </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/cars/car1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- single product -->
                             <div class="col-lg-4 col-md-6">
-                                <div class="single-product">
-                                    <img class="img-fluid" src="img/product/p3.jpg" alt="">
-                                    <div class="product-details">
-                                        <h6>addidas New Hammer sole
-                                            for Sports person</h6>
-                                        <div class="price">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom">
-
-                                            <a href="#" class="social-info">
-                                                <span class="ti-bag"></span>
-                                                <p class="hover-text">add to bag</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-heart"></span>
-                                                <p class="hover-text">Wishlist</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-sync"></span>
-                                                <p class="hover-text">compare</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-move"></span>
-                                                <p class="hover-text">view more</p>
-                                            </a>
-                                        </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/cars/car2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- single product -->
                             <div class="col-lg-4 col-md-6">
-                                <div class="single-product">
-                                    <img class="img-fluid" src="img/product/p4.jpg" alt="">
-                                    <div class="product-details">
-                                        <h6>addidas New Hammer sole
-                                            for Sports person</h6>
-                                        <div class="price">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom">
-
-                                            <a href="#" class="social-info">
-                                                <span class="ti-bag"></span>
-                                                <p class="hover-text">add to bag</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-heart"></span>
-                                                <p class="hover-text">Wishlist</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-sync"></span>
-                                                <p class="hover-text">compare</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-move"></span>
-                                                <p class="hover-text">view more</p>
-                                            </a>
-                                        </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/cars/car3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- single product -->
                             <div class="col-lg-4 col-md-6">
-                                <div class="single-product">
-                                    <img class="img-fluid" src="img/product/p5.jpg" alt="">
-                                    <div class="product-details">
-                                        <h6>addidas New Hammer sole
-                                            for Sports person</h6>
-                                        <div class="price">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom">
-
-                                            <a href="#" class="social-info">
-                                                <span class="ti-bag"></span>
-                                                <p class="hover-text">add to bag</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-heart"></span>
-                                                <p class="hover-text">Wishlist</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-sync"></span>
-                                                <p class="hover-text">compare</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-move"></span>
-                                                <p class="hover-text">view more</p>
-                                            </a>
-                                        </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/cars/car4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- single product -->
                             <div class="col-lg-4 col-md-6">
-                                <div class="single-product">
-                                    <img class="img-fluid" src="img/product/p6.jpg" alt="">
-                                    <div class="product-details">
-                                        <h6>addidas New Hammer sole
-                                            for Sports person</h6>
-                                        <div class="price">
-                                            <h6>$150.00</h6>
-                                            <h6 class="l-through">$210.00</h6>
-                                        </div>
-                                        <div class="prd-bottom">
-
-                                            <a href="#" class="social-info">
-                                                <span class="ti-bag"></span>
-                                                <p class="hover-text">add to bag</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-heart"></span>
-                                                <p class="hover-text">Wishlist</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-sync"></span>
-                                                <p class="hover-text">compare</p>
-                                            </a>
-                                            <a href="#" class="social-info">
-                                                <span class="lnr lnr-move"></span>
-                                                <p class="hover-text">view more</p>
-                                            </a>
-                                        </div>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/cars/car5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
@@ -366,7 +227,8 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-
+        <%@include file="footer.html"%>
     </body>
 </html>
