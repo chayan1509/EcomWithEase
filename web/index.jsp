@@ -13,7 +13,7 @@
 
     </head>
     <body>
-        <%@ include file="header.html" %>
+        <%@ include file="header.jsp" %>
         <div class="alert alert-primary" role="alert" style="height: 50px;">
             <marquee direction="left" width="100%">
                 <p style="font-family: Impact; font-size: 14pt;">
@@ -72,6 +72,6 @@
 
         <%@include file="service_provided.html" %>
         
-
+        <%@include file="footer.html"%>
     </body>
 </html>

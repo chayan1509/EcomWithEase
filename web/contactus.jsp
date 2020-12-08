@@ -14,6 +14,7 @@
         
     </head>
     <body>
+         <%@ include file="header.jsp" %>
        <div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
@@ -68,5 +69,6 @@
 
 
 	<div id="dropDownSelect1"></div>
+         <%@ include file="footer.html" %>
     </body>
 </html>
