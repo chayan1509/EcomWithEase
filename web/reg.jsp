@@ -1,22 +1,26 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Register Yourself</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"/>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         <link rel="stylesheet" href="css/syle.css">
     </head>
 
-    <body>  
-
-        <div class="container pt-3"> 
-            <div class="row d-flex justify-content-center">   
-                <div class="col-5"> 
+    <body style="background-image: url(images/cool-background.png); background-repeat: no-repeat; background-size: cover;">
+        <div class="navbar-light" style="background-color: #fff0d8;">
+            <%@include file="header.jsp"%>
+        </div>
+        <div class="container-fluid pt-3 pb-3"> 
+            <div class="row d-flex justify-content-left">   
+                <div class="col-4"> 
                     <div class="card">
 
                         <div class="card bg-light">
@@ -107,7 +111,13 @@
                                     <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                 
                                 </form>
                             </article>
-                        </div>  </div>  </div></div></div>
-        <!-- card.// -->
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+
+        <%@include file="footer.html"%>
     </body>
 </html>
