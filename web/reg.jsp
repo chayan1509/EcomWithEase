@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         <link rel="stylesheet" href="css/syle.css">
-
+       
     </head>
 
     <body style="background-image: url(images/cool-background.png); background-repeat: no-repeat; background-size: cover;">
@@ -52,19 +52,14 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                                         </div>
-                                        <select class="custom-select" style="max-width: 85px;">
-                                            <option selected="">+91</option>
-                                            <option value="1">+92</option>
-                                            <option value="2">+1</option>
-                                            <option value="3">+701</option>
-                                        </select>
-                                        <input name="phn" class="form-control" placeholder="Phone number" type="text">
+                                        <input name="phone" class="form-control" placeholder="CC"  type="text" style="max-width: 50px;">
+                                        <input name="phone" class="form-control" placeholder="Phone number" type="text">
                                     </div> <!-- form-group// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="form-control input-group-text"> <i class="fa fa-calendar"></i> </span>
                                         </div>
-                                       <input name="" class="form-control" placeholder="Date of birth" type="date">
+                                        <input name="" class="form-control" placeholder="Date of birth" type="date">
                                     </div> <!-- form-group end.// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
@@ -112,8 +107,12 @@
                                             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                         </div>
                                         <input class="form-control" placeholder="Repeat password" type="password">
-                                    </div> <!-- form-group// -->                                      
-                                    <div class="form-group">
+                                    </div> <!-- form-group// -->  
+                                    <div class="form-group input-group">
+                                        <label for="userImage">Upload Image</label>
+                                        <input name="userImage" type="file" class="form-control-file" id="userImage">
+                                    </div> 
+                                    <div class="form-group text-center">
                                         <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
                                     </div> <!-- form-group// -->      
                                     <p class="text-center">Have an account? <a href="Login.html">Log In</a> </p>                                                                 
