@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         <link rel="stylesheet" href="css/syle.css">
-       
+
     </head>
 
     <body style="background-image: url(images/cool-background.png); background-repeat: no-repeat; background-size: cover;">
@@ -40,26 +40,26 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                                         </div>
-                                        <input name="" class="form-control" placeholder="Full name" type="text">
+                                        <input name="userName" class="form-control" placeholder="Full name" type="text">
                                     </div> <!-- form-group// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                                         </div>
-                                        <input name="" class="form-control" placeholder="Email address" type="email">
+                                        <input name="userEmail" class="form-control" placeholder="Email address" type="email">
                                     </div> <!-- form-group// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                                         </div>
-                                        <input name="phone" class="form-control" placeholder="CC"  type="text" style="max-width: 50px;">
-                                        <input name="phone" class="form-control" placeholder="Phone number" type="text">
+                                       
+                                        <input name="userPhone" class="form-control" placeholder="Phone number" type="text">
                                     </div> <!-- form-group// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="form-control input-group-text"> <i class="fa fa-calendar"></i> </span>
                                         </div>
-                                        <input name="" class="form-control" placeholder="Date of birth" type="date">
+                                        <input name="userDOB" class="form-control" placeholder="Date of Birth" type="date">
                                     </div> <!-- form-group end.// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
@@ -68,19 +68,19 @@
                                         <div class="ui-widget-content text-center">                 
                                             &nbsp;&nbsp;&nbsp;&nbsp;
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="gender" value="male">
+                                                <input class="form-check-input" type="radio" name="userGender" value="male">
                                                 <label class="form-check-label">
                                                     Male
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="gender" value="female" >
+                                                <input class="form-check-input" type="radio" name="userGender" value="female" >
                                                 <label class="form-check-label">
                                                     Female
                                                 </label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="gender" value="trans" >
+                                                <input class="form-check-input" type="radio" name="userGender" value="trans" >
                                                 <label class="form-check-label">
                                                     Other
                                                 </label>
@@ -92,7 +92,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-building"></i> </span>
                                         </div>
-                                        <input name="add" class="form-control" placeholder="Address" type="text">
+                                        <input name="userAddress" class="form-control" placeholder="Address" type="text">
 
                                     </div> <!-- form-group end.// -->
 
@@ -100,14 +100,9 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                         </div>
-                                        <input class="form-control" placeholder="Create password" type="password">
+                                        <input class="form-control" name="userPassword" placeholder="Create password" type="password">
                                     </div> <!-- form-group// -->
-                                    <div class="form-group input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                                        </div>
-                                        <input class="form-control" placeholder="Repeat password" type="password">
-                                    </div> <!-- form-group// -->  
+                                    
                                     <div class="form-group input-group">
                                         <label for="userImage">Upload Image</label>
                                         <input name="userImage" type="file" class="form-control-file" id="userImage">
