@@ -35,7 +35,7 @@
                                 <p class="divider-text">
                                     <span class="bg-light">OR</span>
                                 </p>
-                                <form>
+                                <form action="registration.jsp" method="post">
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
@@ -108,7 +108,7 @@
                                         <input name="userImage" type="file" class="form-control-file" id="userImage">
                                     </div> 
                                     <div class="form-group text-center">
-                                        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+                                        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
                                     </div> <!-- form-group// -->      
                                     <p class="text-center">Have an account? <a href="Login.html">Log In</a> </p>                                                                 
                                 </form>

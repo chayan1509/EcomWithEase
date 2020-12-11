@@ -1,7 +1,8 @@
-<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.*"%>
 <%@page import="dbcon.ConnectionDB"%>
-<%@page import="java.sql.Connection"%>
 <%@page import="text.EncryptText"%>
+<%@page import="java.text.SimpleDateFormat"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
@@ -17,15 +18,15 @@
     try {
         Connection con = ConnectionDB.getConnection();
         
-        PreparedStatement ps = con.prepareStatement("insert into registration values(?,?,?,?,?,?,?,?,?)");
+        PreparedStatement ps = con.prepareStatement("insert into registration values(?,?,?,?,?,?,?,?)");
         ps.setString(1, name);
         ps.setString(2, email);
         ps.setString(3, phone);
         ps.setString(4, gender);
         ps.setString(5, add);
         ps.setString(6, dob);
-        ps.setString(7, "default.jpg");
         ps.setString(8, pass);
+        ps.setString(7, "default.jpg");
        
         if (ps.executeUpdate() > 0) {
             out.print("Registration Successfull");
