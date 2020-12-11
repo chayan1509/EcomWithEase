@@ -12,16 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         <link rel="stylesheet" href="css/syle.css">
-        <title>jQuery UI Datepicker - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-      $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
+
     </head>
 
     <body style="background-image: url(images/cool-background.png); background-repeat: no-repeat; background-size: cover;">
@@ -69,22 +60,20 @@
                                         </select>
                                         <input name="phn" class="form-control" placeholder="Phone number" type="text">
                                     </div> <!-- form-group// -->
-                                       <div class="form-group input-group">
+                                    <div class="form-group input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
+                                            <span class="form-control input-group-text"> <i class="fa fa-calendar"></i> </span>
                                         </div>
-                                              <div style="margin-left" align="center" class="ui-widget-content">             
-                                            <p>Date: <input type="text" id="datepicker"></p>
-                                        </div>
+                                       <input name="" class="form-control" placeholder="Date of birth" type="date">
                                     </div> <!-- form-group end.// -->
-                                                    <div class="form-group input-group">
+                                    <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-venus-mars"></i> </span>
                                         </div>
-                                        <div  align="center" class="ui-widget-content">                 
-
+                                        <div class="ui-widget-content text-center">                 
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="gender" value="male" checked>
+                                                <input class="form-check-input" type="radio" name="gender" value="male">
                                                 <label class="form-check-label">
                                                     Male
                                                 </label>
@@ -111,7 +100,7 @@
                                         <input name="add" class="form-control" placeholder="Address" type="text">
 
                                     </div> <!-- form-group end.// -->
-                    
+
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
