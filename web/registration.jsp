@@ -14,19 +14,17 @@
     String gender = request.getParameter("userGender");
     String add = request.getParameter("userAddress");
     String dob = request.getParameter("userDOB");
-    String image = request.getParameter("userImage");
     try {
         Connection con = ConnectionDB.getConnection();
         
-        PreparedStatement ps = con.prepareStatement("insert into registration values(?,?,?,?,?,?,?,?)");
+        PreparedStatement ps = con.prepareStatement("insert into registration(userName,userEmail,userPhone,userGender,userAddress,userDOB,userPassword) values(?,?,?,?,?,?,?)");
         ps.setString(1, name);
         ps.setString(2, email);
         ps.setString(3, phone);
         ps.setString(4, gender);
         ps.setString(5, add);
         ps.setString(6, dob);
-        ps.setString(8, pass);
-        ps.setString(7, "default.jpg");
+        ps.setString(7, pass);
        
         if (ps.executeUpdate() > 0) {
             out.print("Registration Successfull");

@@ -103,10 +103,6 @@
                                         <input class="form-control" name="userPassword" placeholder="Create password" type="password">
                                     </div> <!-- form-group// -->
                                     
-                                    <div class="form-group input-group">
-                                        <label for="userImage">Upload Image</label>
-                                        <input name="userImage" type="file" class="form-control-file" id="userImage">
-                                    </div> 
                                     <div class="form-group text-center">
                                         <button type="submit" class="btn btn-primary btn-block">Create Account</button>
                                     </div> <!-- form-group// -->      
