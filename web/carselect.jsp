@@ -13,7 +13,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-      
+
         <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1mJd75EqIl3zN36hkCartGrrVMpdSpJaI" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
@@ -36,50 +36,54 @@
 
 
 
-                       
 
-<br/>
-<br/>
-                        <div class="container">
-                            <%
-                                Connection con = ConnectionDB.getConnection();
-                                PreparedStatement ps = con.prepareStatement("select * from cardetails");
-                                ResultSet rs = ps.executeQuery();
-                                int i;
-                                while(rs.next()){
-                                    i=0;
-                                %>
-                            <div class="row">
-                                <!-- single product -->
-                                <%
-                                    do{
-                                %>
-                                <div class="col-lg-4">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="<% out.print(rs.getString("carPhoto"));%>" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title"><% out.print(rs.getString("carName"));%></h5>
-                                            <p class="card-text"><% out.print(rs.getString("carType")+"<br/>"+rs.getString("carColor")+"<br/>"+rs.getString("carSeat"));%></p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <% 
-                                   i++; if(i==3)break; }while(rs.next());
-                                            
-                                %>
-                                
-                            </div>
+
+        <br/>
+        <br/>
+        <div class="container">
+            <%
+                Connection con = ConnectionDB.getConnection();
+                PreparedStatement ps = con.prepareStatement("select * from cardetails");
+                ResultSet rs = ps.executeQuery();
+                int i;
+                while (rs.next()) {
+                    i = 0;
+            %>
+            <div class="row">
+                <!-- single product -->
+                <%
+                    do {
+                %>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="<% out.print(rs.getString("carPhoto"));%>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><% out.print(rs.getString("carName"));%></h5>
+                            <p class="card-text"><% out.print(rs.getString("carType") + "<br/>" + rs.getString("carColor") + "<br/>" + rs.getString("carSeat"));%></p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
-                            <br/>
-                        <% } %>
-                           
-                            
-                    
-                 
-                   
-                   
-                
+                    </div>
+                </div>
+                <%
+                        i++;
+                        if (i == 3) {
+                            break;
+                        }
+                    } while (rs.next());
+
+                %>
+
+            </div>
+        </div>
+        <br/>
+        <% }%>
+
+
+
+
+
+
+
 
         <%@include file="footer.html"%>
     </body>
