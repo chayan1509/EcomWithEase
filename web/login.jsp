@@ -1,44 +1,36 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.util.Random"%>
-<%@page import="text.EncryptText"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="dbcon.ConnectionDB"%>
-<%@page import="java.sql.Connection"%>
-<!DOCTYPE html>
-<%
-            Connection con = ConnectionDB.getConnection();
-            String email = request.getParameter("email");
-            String pass = request.getParameter("pass");
-            out.print(con);
-            out.print(pass);
-            out.print(email);
 
-            pass = EncryptText.getEncrypted(EncryptText.getEncrypted(EncryptText.getEncrypted(pass, "MD5"), "SHA-1"), "MD5");
-            RequestDispatcher rd;
-            PreparedStatement ps = con.prepareStatement("select * from registration where Email=?");
-            ps.setString(1, email);
-            ResultSet rs = ps.executeQuery();
-            if (rs.next()) {
-                out.print(rs.getString("Password"));
-                if (pass.equals(rs.getString("Password"))) {
-                    out.print("Success");
-                    HttpSession sess = request.getSession();
-                    Random r = new Random();
-                    int x = (r.nextInt(900) + 100) * 100;
-                    String key = EncryptText.getEncrypted(x + "", "MD5");
-                    sess.setAttribute("name", rs.getString("Name"));
-                    sess.setAttribute("email", rs.getString("Email"));
-                    sess.setAttribute("log_key", key);
-                    response.sendRedirect("index.jsp");
-                } else {
-                    rd = request.getRequestDispatcher("login.html");
-                    out.print("<script>alert('Invalid Password')</script>");
-                    //rd.include(request, response);
-                }
-            } else {
-                rd = request.getRequestDispatcher("login.html");
-                out.print("<script>alert('Invalid User Please Register')</script>");
-                //rd.include(request, response);            
-            }
-        %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    </head>
+    <body>
+        <form action="logincheck.jsp" method="post">
+        <h1>Login</h1>
+
+        <div class="txtb">
+          <input name="userEmail" type="text" placeholder="Email">
+        </div>
+        <div class="txtb">
+          <input name="userPassword" type="password" placeholder="Password" id="myInput">
+          
+          
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        <div class="bottom-text">
+           <a href="#">Forgot Password ?</a>
+        </div>
+        <div class="bottom-text">
+          Don't have account? <a href="register.html">Sign up</a>
+        </div>
+      </form>
+    </body>
+</html>

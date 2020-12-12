@@ -34,9 +34,9 @@ public class SendingMail {
           } catch (MessagingException e) {throw new RuntimeException(e);}    
              
     }   
-  /*
- public static void main(String[] args) {     
-     send("chayanru99@gmail.com","hello","How r u?");   
- }    
-  */
+  
+// public static void main(String[] args) {     
+//     send("ghosalananya1599@gmail.com","hello","How r u?");   
+// }    
+//  
 }
