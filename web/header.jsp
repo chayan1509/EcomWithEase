@@ -1,3 +1,5 @@
+<%@page import="dbcon.ConnectionDB"%>
+<%@page import="java.sql.*"%>
 <style> 
     .custom-bg{
         background-color: #73d5e6;
@@ -25,15 +27,38 @@
                     <li class="nav-item"><a class="nav-link" href="#">Financial Aids</a></li>
                 </ul>
             </li>
-             <li class="nav-item active"><a class="nav-link" href="index-2.html">About Us</a></li>
-             <li class="nav-item active"><a class="nav-link" href="contactus.html">Contact Us</a></li>
-            
-        </ul>        
+            <li class="nav-item active"><a class="nav-link" href="index-2.html">About Us</a></li>
+            <li class="nav-item active"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+
+        </ul> 
+
+        <%
+            Connection con = ConnectionDB.getConnection();
+            HttpSession sess = request.getSession(false);
+            if (sess.getAttribute("userName") != null) {
+        %>
+
         <form class="form-inline my-2 my-lg-0">
             <button type="button" class="btn btn-outline-success my-2 my-sm-0" style="margin-right:5px;">Login</button>
 
             <button class="btn btn-outline-danger my-2 my-sm-0" style="margin-right:5px;" type="submit">Register</button>
         </form>
+        <%
+        } else {
+
+        %>
+        <form class="form-inline my-2 my-lg-0">
+            <div class="navbar-nav" style="color:White">
+                Welcome<strong> <% out.print(sess.getAttribute("userName"));%></strong>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="window.location.href = 'logout.jsp?key=<% out.print(sess.getAttribute("log_key"));%>'">Logout</button>
+        </form>
+
+        <%        }
+
+            
+        %>
+
     </div>
 
 </nav>

@@ -10,27 +10,65 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <style>
 
+            .login,
+            .image {
+                min-height: 100vh;
+            }
+
+            .bg-image {
+                background-image: url('https://res.cloudinary.com/mhmd/image/upload/v1555917661/art-colorful-contemporary-2047905_dxtao7.jpg');
+                background-size: cover;
+                background-position: center center;
+            }
+        </style>  
     </head>
     <body>
-        <form action="logincheck.jsp" method="post">
-        <h1>Login</h1>
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-md-6 d-none d-md-flex bg-image"></div>
+                <div class="col-md-6 bg-light">
+                    <div class="login d-flex align-items-center py-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 col-xl-7 mx-auto">
+                                    <h3 class="display-4">Login</h3>
+                                    <p class="text-muted mb-4">Hey user login.....!!!</p>
+                                    <form action="logincheck.jsp" method="post">
+                                        <div class="form-group mb-3">
+                                            <input id="email" type="email" name="userEmail" placeholder="Email address" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input id="pass" type="password" placeholder="Password" name="userPassword" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input id="customCheck1" type="checkbox"  class="custom-control-input" onclick="showPass()">
+                                            <label for="customCheck1" class="custom-control-label" >Show Password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
 
-        <div class="txtb">
-          <input name="userEmail" type="text" placeholder="Email">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-        <div class="txtb">
-          <input name="userPassword" type="password" placeholder="Password" id="myInput">
-          
-          
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
-        <div class="bottom-text">
-           <a href="#">Forgot Password ?</a>
-        </div>
-        <div class="bottom-text">
-          Don't have account? <a href="register.html">Sign up</a>
-        </div>
-      </form>
+        <script>
+            function showPass() {
+                var x = document.getElementById("pass");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
     </body>
 </html>
