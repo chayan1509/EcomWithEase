@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page errorPage="errorpage.jsp"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,6 +23,7 @@
                 </p>
             </marquee>
         </div>
+      
 
         <div class="container">
             <div class="row">
