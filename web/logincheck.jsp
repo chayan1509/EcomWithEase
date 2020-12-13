@@ -26,8 +26,8 @@
                     Random r = new Random();
                     int x = (r.nextInt(900) + 100) * 100;
                     String key = EncryptText.getEncrypted(x + "", "MD5");
-                    sess.setAttribute("name", rs.getString("userName"));
-                    sess.setAttribute("email", rs.getString("userEmail"));
+                    sess.setAttribute("userName", rs.getString("userName"));
+                    sess.setAttribute("userEmail", rs.getString("userEmail"));
                     sess.setAttribute("log_key", key);
                     response.sendRedirect("index.jsp");
                 } else {
