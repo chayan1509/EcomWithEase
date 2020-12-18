@@ -44,9 +44,12 @@
         %>
 
         <form class="form-inline my-2 my-lg-0">
-            <button type="button" class="btn btn-outline-success my-2 my-sm-0" style="margin-right:5px;">Login</button>
-
-            <button class="btn btn-outline-danger my-2 my-sm-0" style="margin-right:5px;" type="submit">Register</button>
+            <a href="login.jsp">
+                <input type="button" class="btn btn-outline-success my-2 my-sm-0" style="margin-right:5px;" value="Login">
+            </a>
+            <a href="reg.jsp">
+                <input type="button" class="btn btn-outline-success my-2 my-sm-0" style="margin-right:5px;" value="Register">
+            </a>
         </form>
 
         <%
