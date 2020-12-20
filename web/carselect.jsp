@@ -32,24 +32,16 @@
                 </center>
             </div>
         </section>
-        <br>
 
-
-
-
-
-        <br/>
-        <br/>
-        <div class="container">
-            <%
-                Connection con = ConnectionDB.getConnection();
+        <div class="container pt-5">
+            <%                Connection con = ConnectionDB.getConnection();
                 PreparedStatement ps = con.prepareStatement("select * from cardetails");
                 ResultSet rs = ps.executeQuery();
                 int i;
                 while (rs.next()) {
                     i = 0;
             %>
-            <div class="row">
+            <div class="row pt-2">
                 <!-- single product -->
                 <%
                     do {
@@ -74,17 +66,17 @@
                 %>
 
             </div>
+
+
+            <% }%>
+
         </div>
+
+
+
+
+
         <br/>
-        <% }%>
-
-
-
-
-
-
-
-
         <%@include file="footer.html"%>
     </body>
 </html>
