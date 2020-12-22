@@ -27,6 +27,7 @@
         ps.setString(7, pass);
        
         if (ps.executeUpdate() > 0) {
+            response.sendRedirect("index.jsp");
             out.print("Registration Successfull");
             
             con.close();
