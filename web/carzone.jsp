@@ -14,6 +14,14 @@
 
     </head>
     <body style="background-color: #e2e2e2;">
+        <script>
+            $(window).bind("pageshow", function(event) {
+                if (event.originalEvent.persisted) {
+                    window.location.reload(); 
+                }
+            });
+            
+        </script>
         <%@include file="header.jsp" %>
 
         <div id="carouselExampleCaptions" class="carousel slide pt-1" data-ride="carousel">
@@ -26,14 +34,14 @@
                 <div class="carousel-item active">
                     <img src="images/car4.jpg" class="d-block w-100"style="height: 450px;" alt="Car">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
+                        <button class="btn btn-primary" onclick="window.location.href='carselect.jsp'">Select Your Car</button>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/car5.jpg" class="d-block w-100 " style="height: 450px;" alt="Car">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
+                        <button class="btn btn-primary" onclick="window.location.href='rentyourcar.jsp'">Rent Your Car</button>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
@@ -210,7 +218,7 @@
         </div> 
         
         <br>
-
+        
 
         <%@include file="footer.html" %>
 
