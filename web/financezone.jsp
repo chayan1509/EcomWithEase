@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="zxx">
+<html lang="en">
 
     <head>
         <title>Home Loan a Banking Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
