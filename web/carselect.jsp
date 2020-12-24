@@ -52,8 +52,8 @@
                         <img src="<% out.print(rs.getString("carPhoto"));%>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><% out.print(rs.getString("carName"));%></h5>
-                            <p class="card-text"><% out.print(rs.getString("carType") + "<br/>" + rs.getString("carColor") + "<br/>" + rs.getString("carSeat"));%></p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <p class="card-text"><% out.print("Car Type: " + rs.getString("carType") + "<br/>" + rs.getString("carColor") + "<br/>" + rs.getString("carSeat"));%></p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -79,5 +79,111 @@
 
         <br/>
         <%@include file="footer.html"%>
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                </div>
+                                <input name="userName" class="form-control" placeholder="Full name" type="text">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                </div>
+                                <input name="userEmail" class="form-control" placeholder="Email address" type="email">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                                </div>
+
+                                <input name="userPhone" class="form-control" placeholder="Phone number" type="text">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                </div>
+                                <input name="userLicense" class="form-control" placeholder="License Details" type="text">
+                            </div>
+
+                            <div class="form-group input-group">
+                                <label for="exampleFormControlFile1">Example file input</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+
+                            <center>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#payment" >Confirm</button>
+                            </center>
+
+                        </form>
+
+                    </div>
+
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Select Your Payment Method</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Credit Card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Debit Card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label" for="exampleRadios3">
+                                    UPI
+                                </label>
+                            </div>
+                            <center>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" onclick="window.location.href = 'payment.jsp'">Pay Now</button>
+                            </center>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
     </body>
 </html>
