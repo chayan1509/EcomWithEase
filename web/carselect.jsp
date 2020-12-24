@@ -82,7 +82,7 @@
         <!-- Button trigger modal -->
 
 
-        <!-- Modal -->
+        <!-- Modal Book Your Car -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -128,7 +128,7 @@
 
                             <center>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#payment" >Confirm</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#payment" >Confirm</button>
                             </center>
 
                         </form>
@@ -143,7 +143,7 @@
         </div>
 
 
-        <!-- Modal -->
+        <!-- Modal Payment-->
         <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
