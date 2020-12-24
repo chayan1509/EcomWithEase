@@ -16,32 +16,77 @@
     </head>
     <body>
         <%@include file="header.jsp" %>
-        <div class="container-fluid" style="background-image: url('images/banner.jpg'); height: 600px; background-repeat: no-repeat; background-size: cover;">
-            <div class="row">
-                <div class="col-3 mt-2">
-                    <div class="card" style="z-index:70; position: absolute; opacity:0.5; ">
-                        <div class="card-body">
-                            <form>
-                                <div class="form-group">
-                                    <label>Car Brand</label>
-                                    <input name="carBrand" type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Car Brand" aria-describedby="emailHelp">
-                                </div>
-                                <div class="form-group">
-                                    <label>Number Of Seats</label>
-                                    <select name="carSeats" class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                
+        <div class="container-fluid" style="background-image: url('images/car4.jpg'); height: 600px; background-repeat: no-repeat; background-size: cover;">
+            <div class="row pt-5">
 
-                            </form>
+                <div class="col-md-3"> 
+                    <form>
+
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="carName" class="form-control" placeholder="Car Name" type="text">
+                        </div> <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                            </div>
+                            <input name="carNumber" class="form-control" placeholder="Car Number" type="email">
+                        </div> <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                            </div>
+
+                            <input name="carColor" class="form-control" placeholder="car Color" type="text">
+                        </div> <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="insurance" class="form-control" placeholder="Insurance" type="text">
                         </div>
-                    </div>
-                </div> 
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="carType" class="form-control" placeholder="Type Of Car" type="text">
+                        </div>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="carMileage" class="form-control" placeholder="Mileage" type="text">
+                        </div>
+                       
+                        <div class="form-group input-group">
+                            
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Number Of Seats</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        
+
+
+                        <div class="form-group input-group">
+                            <label for="exampleFormControlFile1">Example file input</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+
+                        <center>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#payment" >Confirm</button>
+                        </center>
+
+
+                    </form>
+                </div>
+
             </div>
         </div>
         <%@include file="footer.html" %>

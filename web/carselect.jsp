@@ -21,7 +21,7 @@
     </head>
     <body>
         <%@include file="header.jsp" %>
-        <section class="banner-area organic-breadcrumb" style="background:url(images/banner.jpg) center no-repeat; background-size: cover; width:100%; height:450px;">
+        <section class="banner-area organic-breadcrumb" style="background:url(images/car4.jpg) center no-repeat; background-size: cover; width:100%; height:450px;">
             <div class="container">
                 <center>
                     <h1 style="font-family:Sofia, sans-serif; color:#eb86a6;">FIND THE RIGHT CAR</h1><br/><br/><br/><br/>
