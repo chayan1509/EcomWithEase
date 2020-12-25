@@ -34,11 +34,11 @@
             <div class="modal-dialog modal-dialog-scrollable ">
                 <div class="modal-content">
                     <div class="modal-header" style="background-color:#9419e6">
-                          <h4 class="modal-title" id="exampleModalLabel">Post Your Car</h4>
+                        <h4 class="modal-title" id="exampleModalLabel">Post Your Car</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                         
+
                     </div>
                     <div class="modal-body">
                         <form action="rentUser.jsp" method="post">
