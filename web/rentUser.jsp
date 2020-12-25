@@ -1,4 +1,3 @@
-
 <%@page import="java.sql.*"%>
 <%@page import="dbcon.ConnectionDB"%>
 

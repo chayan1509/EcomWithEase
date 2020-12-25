@@ -35,10 +35,22 @@
             HttpSession sess = request.getSession(false);
             if (sess.getAttribute("userName") != null) {
         %>
-        <div class="navbar-nav" style="color: white">
+        <div class="navbar-nav text-center" style="color: white">
             Welcome <strong><% out.print(sess.getAttribute("userName"));%></strong>
         </div>
-        <button class="btn btn-sm btn-success" onclick="window.location.href = 'logout.jsp?key=<% out.print(sess.getAttribute("log_key"));%>'">Logout</button>
+        <div class="dropdown">
+            <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Account
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="userdetails.jsp">User Details</a>
+                <a class="dropdown-item" href="#">My Cart</a>
+                <a class="dropdown-item" href="#">Wishlist</a>
+                <button class="btn btn-sm btn-success" onclick="window.location.href = 'logout.jsp?key=<% out.print(sess.getAttribute("log_key"));%>'">Logout</button>
+            </div>
+        </div>
+        
+        
         <%
         } else {
         %>

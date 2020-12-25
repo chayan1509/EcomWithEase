@@ -1,7 +1,7 @@
 <%@page import="registration.registration"%>
 <%@page import="java.sql.*"%>
 <%@page import="dbcon.ConnectionDB"%>
-
+<%@page errorPage="errorPage.jsp"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -51,24 +51,12 @@
         </style>
     </head>
     <body>
+        <%@include file="header.jsp"%>
+                   
         <%
-            HttpSession sess = request.getSession(false);
-            if (sess.getAttribute("name") != null) {
-        %>
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                College Management System
-            </a>
-            <div class="navbar-nav" style="color: white">
-                Welcome <strong><% out.print(sess.getAttribute("name"));%></strong>
-            </div>
-            <button class="btn btn-sm btn-success" onclick="window.location.href = 'logout.jsp?key=<% out.print(sess.getAttribute("log_key"));%>'">Logout</button>
-
-        </nav>
-
-
-        <%
+            
+            if (sess.getAttribute("userName") != null) {
+        
             Connection con = ConnectionDB.getConnection();
             PreparedStatement ps = con.prepareStatement("select * from registration where userEmail=?");
             ps.setString(1, sess.getAttribute("userEmail").toString());
@@ -79,7 +67,7 @@
             s.setUserEmail(rs.getString("userEmail"));
             s.setUserPhone(rs.getString("userPhone"));
             s.setUserGender(rs.getString("userGender"));
-            s.setUserAddress(rs.getString("userAddresss"));
+            s.setUserAddress(rs.getString("userAddress"));
             s.setUserDOB(rs.getString("userDOB"));
             s.setUserImage(rs.getString("userImage"));
            
@@ -146,5 +134,6 @@
             </div>
         </div>
     </div>
+     <%@include file="footer.html"%>
 </body>
 </html>
