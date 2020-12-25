@@ -12,83 +12,118 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-
+        <style>
+            label{
+                font-size: 20px;
+            }
+        </style>
     </head>
     <body>
         <%@include file="header.jsp" %>
         <div class="container-fluid" style="background-image: url('images/car4.jpg'); height: 600px; background-repeat: no-repeat; background-size: cover;">
-            <div class="row pt-5">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch demo modal
+            </button>
 
-                <div class="col-md-3"> 
-                    <form>
-
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                            </div>
-                            <input name="carName" class="form-control" placeholder="Car Name" type="text">
-                        </div> <!-- form-group// -->
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                            </div>
-                            <input name="carNumber" class="form-control" placeholder="Car Number" type="email">
-                        </div> <!-- form-group// -->
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-                            </div>
-
-                            <input name="carColor" class="form-control" placeholder="car Color" type="text">
-                        </div> <!-- form-group// -->
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                            </div>
-                            <input name="insurance" class="form-control" placeholder="Insurance" type="text">
-                        </div>
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                            </div>
-                            <input name="carType" class="form-control" placeholder="Type Of Car" type="text">
-                        </div>
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                            </div>
-                            <input name="carMileage" class="form-control" placeholder="Mileage" type="text">
-                        </div>
-                       
-                        <div class="form-group input-group">
-                            
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Number Of Seats</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        
-
-
-                        <div class="form-group input-group">
-                            <label for="exampleFormControlFile1">Example file input</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-
-                        <center>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#payment" >Confirm</button>
-                        </center>
-
-
-                    </form>
-                </div>
-
-            </div>
         </div>
         <%@include file="footer.html" %>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable ">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#9419e6">
+                          <h4 class="modal-title" id="exampleModalLabel">Post Your Car</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                         
+                    </div>
+                    <div class="modal-body">
+                        <form action="rentUser.jsp" method="post">
+                            <div class="form-group ">
+                                <label> Name</label>
+                                <input name="carName" class="form-control" placeholder="car name" type="text" required>
+                            </div> <!-- form-group// -->
+                            <div class="form-group ">
+                                <label> Brand</label>
+                                <input name="carBrand" class="form-control" placeholder="car brand" type="text" required>
+                            </div> <!-- form-group// -->
+                            <div class="form-group ">
+                                <label> Type</label>
+                                <input name="carType" class="form-control" placeholder="car type" type="text" required>
+                            </div> <!-- form-group// -->
+                            <div class="form-group ">
+                                <label> Number</label>
+                                <input name="carNumber" class="form-control" placeholder="car number" type="text" required>
+                            </div> <!-- form-group// -->
+                            <div class="form-group ">
+                                <label> Color</label>
+                                <input name="carColor" class="form-control" placeholder="car color" type="text" required>
+                            </div> <!-- form-group end.// -->
+                            <div class="form-group ">
+                                <label>Fuel Type</label>
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <div class="btn-group" role="group" aria-label="first group">
+                                        <input name="carFuel" type="button" class="btn btn-info" value="Diesel">&nbsp;&nbsp;
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="second group">
+                                        <input name="carFuel" type="button" class="btn btn-info" value="Petrol">&nbsp;&nbsp;
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="third group">
+                                        <input name="carFuel" type="button" class="btn btn-info" value="CNG">&nbsp;&nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label>No. Of Owners</label>
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <div class="btn-group" role="group" aria-label="first group">
+                                        <input name="carOwner" type="button" class="btn btn-info" value="1st">&nbsp;&nbsp;
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="second group">
+                                        <input name="carOwner" type="button" class="btn btn-info" value="2nd">&nbsp;&nbsp;
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="third group">
+                                        <input name="carOwner" type="button" class="btn btn-info" value="3rd">&nbsp;&nbsp;
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="fourth group">
+                                        <input name="carOwner" type="button" class="btn btn-info" value="3+">&nbsp;&nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label>Description</label>
+                                <textarea name="carDesc" class="form-control" placeholder="car description" type="text" required></textarea>
+
+                            </div> <!-- form-group end.// -->
+
+
+                            <div class="form-group ">
+                                <label>Price</label>
+                                <input class="form-control" name="carPrice" placeholder="car price" type="text" required>
+                            </div> <!-- form-group// -->
+                            <div class="form-group ">
+                                <label>Kms Driven</label>
+                                <input class="form-control" name="carKM" placeholder="car kms driven" type="text" required>
+                            </div> <!-- form-group// -->
+
+                            <div class="form-group">
+                                <label>Upload Images</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary">Confirm</button>&nbsp;&nbsp;&nbsp;    
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div> <!-- form-group// -->      
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </body>
 </html>
