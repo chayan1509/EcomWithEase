@@ -35,8 +35,7 @@
         </section>
 
         <div class="container pt-5">
-            <%                
-                Connection con = ConnectionDB.getConnection();
+            <%                Connection con = ConnectionDB.getConnection();
                 PreparedStatement ps = con.prepareStatement("select * from cardetails");
                 ResultSet rs = ps.executeQuery();
                 int i;
@@ -64,6 +63,44 @@
                             break;
                         }
                     } while (rs.next());
+
+                %>
+
+            </div>
+
+
+            <% }%>
+
+        </div>
+        <div class="container pt-5">
+            <%
+                PreparedStatement ps1 = con.prepareStatement("select * from usercartable");
+                ResultSet rs1 = ps1.executeQuery();
+                int j;
+                while (rs1.next()) {
+                    j = 0;
+            %>
+            <div class="row pt-2">
+                <!-- single product -->
+                <%
+                    do {
+                %>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="<% out.print(rs1.getString("carImages"));%>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><% out.print(rs1.getString("carName"));%></h5>
+                            <p class="card-text"><% out.print("Car Type: " + rs1.getString("carType") + "<br/>" + rs1.getString("carColor") + "<br/>" + rs1.getString("carPrice"));%></p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <%
+                        j++;
+                        if (j == 3) {
+                            break;
+                        }
+                    } while (rs1.next());
 
                 %>
 
