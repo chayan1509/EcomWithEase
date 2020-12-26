@@ -35,7 +35,8 @@
         </section>
 
         <div class="container pt-5">
-            <%                Connection con = ConnectionDB.getConnection();
+            <%                
+                Connection con = ConnectionDB.getConnection();
                 PreparedStatement ps = con.prepareStatement("select * from cardetails");
                 ResultSet rs = ps.executeQuery();
                 int i;

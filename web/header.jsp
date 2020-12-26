@@ -24,7 +24,7 @@
                 <ul class="dropdown-menu">
                     <li class="nav-item"><a class="nav-link" href="houserental.html">Housing Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="carzone.jsp">Car Rental</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Financial Aids</a></li>
+                    <li class="nav-item"><a class="nav-link" href="financezone.jsp">Financial Aids</a></li>
                 </ul>
             </li>
             <li class="nav-item active"><a class="nav-link" href="index-2.html">About Us</a></li>
