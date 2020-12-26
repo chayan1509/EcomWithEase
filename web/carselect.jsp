@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
     </head>
-    <body>
+    <body style="background-color: rosybrown">
         <%@include file="header.jsp" %>
         <section class="banner-area organic-breadcrumb" style="background:url(images/car4.jpg) center no-repeat; background-size: cover; width:100%; height:450px;">
             <div class="container">
@@ -72,7 +72,7 @@
             <% }%>
 
         </div>
-        <div class="container pt-5">
+        <div class="container pt-1">
             <%
                 PreparedStatement ps1 = con.prepareStatement("select * from usercartable");
                 ResultSet rs1 = ps1.executeQuery();

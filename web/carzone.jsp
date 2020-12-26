@@ -15,12 +15,12 @@
     </head>
     <body style="background-color: #e2e2e2;">
         <script>
-            $(window).bind("pageshow", function(event) {
+            $(window).bind("pageshow", function (event) {
                 if (event.originalEvent.persisted) {
-                    window.location.reload(); 
+                    window.location.reload();
                 }
             });
-            
+
         </script>
         <%@include file="header.jsp" %>
 
@@ -34,14 +34,17 @@
                 <div class="carousel-item active">
                     <img src="images/car4.jpg" class="d-block w-100"style="height: 450px;" alt="Car">
                     <div class="carousel-caption d-none d-md-block">
-                        <button class="btn btn-primary" onclick="window.location.href='carselect.jsp'">Select Your Car</button>
+                        <button class="btn btn-primary" onclick="window.location.href = 'carselect.jsp'">Select Your Car</button>
+                        <button class="btn btn-primary" onclick="window.location.href = 'rentyourcar.jsp'">Rent Your Car</button>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/car5.jpg" class="d-block w-100 " style="height: 450px;" alt="Car">
                     <div class="carousel-caption d-none d-md-block">
-                        <button class="btn btn-primary" onclick="window.location.href='rentyourcar.jsp'">Rent Your Car</button>
+                        <button class="btn btn-primary" onclick="window.location.href = 'carselect.jsp'">Select Your Car</button>
+                        <button class="btn btn-primary" onclick="window.location.href = 'rentyourcar.jsp'">Rent Your Car</button>
+
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
@@ -62,31 +65,42 @@
         <!-- CAR CARDS FEATURES -->
 
         <div class="container">
-            <div class="row">
+            <center>    <h2>THE ZOOMCAR ADVANTAGE</h2><br/>
+               <h5>We simplified car rentals, so you can focus on what's important to you.</h5></center><hr>
+            <div class="row"> 
                 <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <center> <i class="fas fa-gas-pump fa-3x" style="padding-top:9px;"></i> </center>
+                    <div class="card text-center" style="width: 18rem;">
+                       <i class="fas fa-gas-pump fa-3x" style="padding-top:9px;"></i>
+                       
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5>Fuel Cost Included</h5>
+                            <hr>
+                            <p class="card-text">Don't worry about mileage! All fuel costs are included. If you refill fuel, we'll pay you back!</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card text-center" style="width: 18rem;">
 
                         <center> <i class="fas fa-rupee-sign fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5>No Hidden Charges</h5>
+                            <hr>
+                            <p class="card-text">Our prices include taxes and insurance. What you see is what you really pay!</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card text-center" style="width: 18rem;">
                         <center> <i class="fa fa-gift fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5>Flexi Pricing Packages</h5>
+                            <hr>
+                            <p class="card-text">One size never fits all! Choose a balance of time and kilometers that works best for you.
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -94,29 +108,35 @@
             <br>
             <div class="row">
                 <div class="col-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card text-center" style="width: 18rem;">
                         <center> <i class="fas fa-car-crash fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5>Damage Insurance</h5>
+                            <hr>
+                            <p class="card-text">All your bookings include damage insurance! Drive safe, but don’t worry!</p>
                         </div>
                     </div>
 
                 </div>
 
                 <div class="col-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card text-center" style="width: 18rem;">
                         <center> <i class="fa fa-map-marker fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5>Go Anywhere</h5>
+                            <hr>
+                            <p class="card-text">Our cars have all-India permits.  Just remember to pay state tolls and entry taxes.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card text-center" style="width: 18rem;">
                         <center> <i class="fas fa-road fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5>24x7 Roadside Assistance</h5>
+                            <hr>
+                            <p class="card-text">We have round-the-clock, pan India partners. Help is never far away from you.</p>
                         </div>
                     </div>
                 </div>
@@ -125,7 +145,7 @@
         </div>
 
         <!--   Car Availability  -->
-
+        
         <div id="carouselExampleCaptions" class="carousel slide pt-3" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -159,66 +179,71 @@
             </a>
         </div>
         <!--   Car Availability End -->
-        
+
         <!--  How Carzone Works -->
-        
+
         <div class="container pt-3">
             <center><h3><strong> How CarZone Works </strong></h3> </center>
             <center><h5>Drive yourself to an adventure and back in 5 simple steps</h5> </center>
-            
+
             <hr>
             <div class="row pt-2 pb-3">
                 <div class="col-sm">
-                    <div class="card" >
-                        <center> <i class="fas fa-car-crash fa-3x" style="padding-top:9px;"></i> </center>
+                    <div class="card text-center h-100" >
+                        <center> <i class="fas fa-car fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h6>BOOK</h6>
+                            <p class="card-text">Search for and book a car on our site!</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="card" >
-                        <center> <i class="fas fa-car-crash fa-3x" style="padding-top:9px;"></i> </center>
+                    <div class="card text-center h-100" >
+                        <center> <i class="fa fa-id-card fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h6>UPLOAD LICENSE</h6>
+                            <p class="card-text">Upload your driver’s license, and pay a small security deposit.</p>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-sm">
-                    <div class="card">
-                        <center> <i class="fas fa-car-crash fa-3x" style="padding-top:9px;"></i> </center>
+                    <div class="card text-center h-100">
+                        <center> <i class="fas fa-unlock-alt fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h6>UNLOCK</h6>
+                            <p class="card-text">We SMS your car details 20 minutes before pickup. Unlock it via the Zoomcar app.</p>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-sm">
-                    <div class="card">
-                        <center> <i class="fas fa-car-crash fa-3x" style="padding-top:9px;"></i> </center>
+                    <div class="card text-center h-100">
+                        <center> <i class="fa fa-car fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h6>ZOOM</h6>
+                            <p class="card-text">Fill the start checklist in the Zoomcar app. Grab the keys from the glove-box and drive.</p>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-sm">
-                    <div class="card">
-                        <center> <i class="fas fa-car-crash fa-3x" style="padding-top:9px;"></i> </center>
+                    <div class="card text-center h-100">
+                        <center> <i class="fa fa-undo fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h6>RETURN</h6>
+                            <p class="card-text">Return the car to the same location and fill the end checklist to end your trip.</p>
                         </div>
                     </div>
-                    
+
                 </div>
-               
+
             </div>
-            
+
         </div> 
-        
+
         <br>
-        
+
 
         <%@include file="footer.html" %>
 
