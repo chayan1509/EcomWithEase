@@ -19,12 +19,33 @@
     </head>
     <body>
         <%@include file="header.jsp" %>
-        <div class="container-fluid" style="background-image: url('images/car4.jpg'); height: 600px; background-repeat: no-repeat; background-size: cover;">
+        <div class="container-fluid" style="background-image: url('images/car4.jpg'); height: 550px; background-repeat: no-repeat; background-size: cover; ">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Launch demo modal
-            </button>
-
+            <div class="row">
+                <div class="col pt-4" style="opacity: 0.5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><i class="fa fa-car fa-2x" aria-hidden="true"></i></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Rent Your Car</h6>
+                            <p class="card-text"></p>
+                            <a class="card-link btn btn-danger" data-toggle="modal" data-target="#exampleModal">Rent</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col pt-3" style="opacity: 0.5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><i class="fas fa-car-side fa-2x" aria-hidden="true"></i></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Select Your Car</h6>
+                            <p class="card-text"></p>
+                            <a href="carselect.jsp" class="card-link btn btn-danger">Select</a>
+                        </div>
+                    </div>
+                </div>
+            </div>           
         </div>
         <%@include file="footer.html" %>
 
