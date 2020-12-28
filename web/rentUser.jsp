@@ -46,7 +46,7 @@
         }
     } else {
         out.print("<script>alert('Please Log In First')</script>");
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("rentyourcar.jsp");
     }
 %>
 
