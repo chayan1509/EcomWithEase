@@ -27,8 +27,8 @@
                     <li class="nav-item"><a class="nav-link" href="financezone.jsp">Financial Aids</a></li>
                 </ul>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="index-2.html">About Us</a></li>
-            <li class="nav-item active"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+            <li class="nav-item active"><a class="nav-link" href="about.jsp">About Us</a></li>
+            <li class="nav-item active"><a class="nav-link" href="contactus.jsp">Contact Us</a></li>
 
         </ul> 
         <%
