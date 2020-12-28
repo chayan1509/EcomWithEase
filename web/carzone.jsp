@@ -1,5 +1,4 @@
 
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -66,12 +65,12 @@
 
         <div class="container">
             <center>    <h2>THE ZOOMCAR ADVANTAGE</h2><br/>
-               <h5>We simplified car rentals, so you can focus on what's important to you.</h5></center><hr>
+                <h5>We simplified car rentals, so you can focus on what's important to you.</h5></center><hr>
             <div class="row"> 
-                <div class="col-4">
+                <div class="col">
                     <div class="card text-center" style="width: 18rem;">
-                       <i class="fas fa-gas-pump fa-3x" style="padding-top:9px;"></i>
-                       
+                        <i class="fas fa-gas-pump fa-3x" style="padding-top:9px;"></i>
+
                         <div class="card-body">
                             <h5>Fuel Cost Included</h5>
                             <hr>
@@ -80,7 +79,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col">
                     <div class="card text-center" style="width: 18rem;">
 
                         <center> <i class="fas fa-rupee-sign fa-3x" style="padding-top:9px;"></i> </center>
@@ -92,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col">
                     <div class="card text-center" style="width: 18rem;">
                         <center> <i class="fa fa-gift fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
@@ -107,7 +106,7 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-4">
+                <div class="col">
                     <div class="card text-center" style="width: 18rem;">
                         <center> <i class="fas fa-car-crash fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
@@ -119,7 +118,7 @@
 
                 </div>
 
-                <div class="col-4">
+                <div class="col">
                     <div class="card text-center" style="width: 18rem;">
                         <center> <i class="fa fa-map-marker fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
@@ -130,7 +129,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col">
                     <div class="card text-center" style="width: 18rem;">
                         <center> <i class="fas fa-road fa-3x" style="padding-top:9px;"></i> </center>
                         <div class="card-body">
@@ -145,7 +144,7 @@
         </div>
 
         <!--   Car Availability  -->
-        
+
         <div id="carouselExampleCaptions" class="carousel slide pt-3" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
