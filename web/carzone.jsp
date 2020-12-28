@@ -242,8 +242,11 @@
         </div> 
 
         <br>
-
-
+        <div class="container">
+            <%@include  file="carbanner.html" %>
+        </div>
+       
+        
         <%@include file="footer.html" %>
 
     </body>
