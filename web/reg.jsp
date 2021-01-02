@@ -40,26 +40,26 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                                         </div>
-                                        <input name="userName" class="form-control" placeholder="Full name" type="text">
+                                        <input name="userName" class="form-control" placeholder="Full name" type="text" required>
                                     </div> <!-- form-group// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                                         </div>
-                                        <input name="userEmail" class="form-control" placeholder="Email address" type="email">
+                                        <input name="userEmail" class="form-control" placeholder="Email address" type="email" required>
                                     </div> <!-- form-group// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                                         </div>
 
-                                        <input name="userPhone" class="form-control" placeholder="Phone number" type="text">
+                                        <input name="userPhone" class="form-control" placeholder="Phone number" type="text" required> 
                                     </div> <!-- form-group// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="form-control input-group-text"> <i class="fa fa-calendar"></i> </span>
                                         </div>
-                                        <input name="userDOB" class="form-control" placeholder="Date of Birth" type="date">
+                                        <input name="userDOB" class="form-control" placeholder="Date of Birth" type="date" required>
                                     </div> <!-- form-group end.// -->
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
@@ -92,7 +92,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-building"></i> </span>
                                         </div>
-                                        <input name="userAddress" class="form-control" placeholder="Address" type="text">
+                                        <input name="userAddress" class="form-control" placeholder="Address" type="text" required>
 
                                     </div> <!-- form-group end.// -->
 
@@ -100,7 +100,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                                         </div>
-                                        <input class="form-control" name="userPassword" placeholder="Create password" type="password">
+                                        <input class="form-control" name="userPassword" placeholder="Create password" type="password" required>
                                     </div> <!-- form-group// -->
 
                                     <div class="form-group text-center">
