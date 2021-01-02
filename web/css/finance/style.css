@@ -638,6 +638,9 @@ arrow-container,
 }
 /* testimonials */
 
+.carousel-indicators .active {
+    background: #f4511e;
+}
 
 .content {
     margin-top: 20px;
