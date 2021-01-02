@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         <link rel="stylesheet" href="css/syle.css">
-
     </head>
 
     <body style="background-image: url(images/cool-background.png); background-repeat: no-repeat; background-size: cover;">
@@ -53,7 +52,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                                         </div>
-                                       
+
                                         <input name="userPhone" class="form-control" placeholder="Phone number" type="text">
                                     </div> <!-- form-group// -->
                                     <div class="form-group input-group">
@@ -103,7 +102,7 @@
                                         </div>
                                         <input class="form-control" name="userPassword" placeholder="Create password" type="password">
                                     </div> <!-- form-group// -->
-                                    
+
                                     <div class="form-group text-center">
                                         <button type="submit" class="btn btn-primary btn-block">Create Account</button>
                                     </div> <!-- form-group// -->      
@@ -116,7 +115,10 @@
             </div>
         </div>
 
-
         <%@include file="footer.html"%>
     </body>
+
+
+
+
 </html>

@@ -14,6 +14,7 @@
     String gender = request.getParameter("userGender");
     String add = request.getParameter("userAddress");
     String dob = request.getParameter("userDOB");
+    
     try {
         Connection con = ConnectionDB.getConnection();
         
