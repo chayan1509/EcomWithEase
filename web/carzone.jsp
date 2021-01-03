@@ -1,10 +1,11 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link href="css/finance/style.css" rel='stylesheet' type='text/css' />
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -21,6 +22,14 @@
             });
 
         </script>
+        <style> 
+            .banner{
+                background-image: url('images/conut.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+        </style>
         <%@include file="header.jsp" %>
 
         <div id="carouselExampleCaptions" class="carousel slide pt-1" data-ride="carousel">
@@ -242,12 +251,80 @@
         </div> 
 
         <br>
+
         <div class="container">
             <%@include  file="carbanner.html" %>
         </div>
-       
-        
-        <%@include file="footer.html" %>
 
+        <!-- stats -->
+        <section class="stats pb-5 banner" >
+            <div class="container py-md-4 mt-md-3">
+                <div class="row inner_w3l_agile_grids-1">
+                    <div class="col-lg-3 col-sm-6 w3layouts_stats_left w3_counter_grid">
+                        <p class="counter">2001</p>
+                        <h3 style="color: whitesmoke;">Year of Foundation</h3>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 w3layouts_stats_left w3_counter_grid1">
+                        <p class="counter">765</p>
+                        <h3 style="color: whitesmoke;">Issued Loans</h3>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 w3layouts_stats_left w3_counter_grid2">
+                        <p class="counter">125</p>
+                        <h3 style="color: whitesmoke;">Business Partners</h3>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 w3layouts_stats_left w3_counter_grid2">
+                        <p class="counter">150</p>
+                        <h3 style="color: whitesmoke;">Happy Clients</h3>
+                    </div>
+                </div>
+            </div>	
+        </section>
+        <!-- //stats -->
+        <br>
+
+
+        <%@include file="footer.html" %>
+        <!-- //Modal -->
+        <!-- js-->
+        <script src="js/finance/jquery-2.2.3.min.js"></script>
+        <!-- js-->
+        <!-- Banner Responsiveslides -->
+        <script src="js/finance/responsiveslides.min.js"></script>
+        <script>
+                            // You can also use "$(window).load(function() {"
+                            $(function () {
+                                // Slideshow 4
+                                $("#slider3").responsiveSlides({
+                                    auto: true,
+                                    pager: true,
+                                    nav: false,
+                                    speed: 500,
+                                    namespace: "callbacks",
+                                    before: function () {
+                                        $('.events').append("<li>before event fired.</li>");
+                                    },
+                                    after: function () {
+                                        $('.events').append("<li>after event fired.</li>");
+                                    }
+                                });
+
+                            });
+        </script>
+        <!-- // Banner Responsiveslides -->
+        <!-- stats -->
+        <script src="js/finance/jquery.waypoints.min.js"></script>
+        <script src="js/finance/jquery.countup.js"></script>
+        <script>
+                            $('.counter').countUp();
+        </script>
+        <!-- //stats -->
+        <!--pop-up-box -->
+        <script src="js/finance/jquery.magnific-popup.js"></script>
+
+        <!-- //pop-up-box -->
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/finance/bootstrap.js ">
+        </script>
+        <!-- //Bootstrap Core JavaScript -->
     </body>
 </html>

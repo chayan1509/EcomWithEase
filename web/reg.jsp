@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         <link rel="stylesheet" href="css/syle.css">
+        <script src="js/reg.js"></script>
     </head>
 
     <body style="background-image: url(images/cool-background.png); background-repeat: no-repeat; background-size: cover;">
@@ -35,7 +36,7 @@
                                 <p class="divider-text">
                                     <span class="bg-light">OR</span>
                                 </p>
-                                <form action="registration.jsp" method="post">
+                                <form onsubmit="return validate()" action="registration.jsp" method="post">
                                     <div class="form-group input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
@@ -68,7 +69,7 @@
                                         <div class="ui-widget-content text-center">                 
                                             &nbsp;&nbsp;&nbsp;&nbsp;
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="userGender" value="male">
+                                                <input class="form-check-input" type="radio" name="userGender" value="male" required>
                                                 <label class="form-check-label">
                                                     Male
                                                 </label>
