@@ -81,7 +81,7 @@
                     <td><% out.print("Name: " + s.getUserName() + "<br/>"); %></td>
                     <td rowspan="6" style="width:450px;">
                         <div class="container">  
-                            <img src="<% out.print(s.getUserImage()); %>" width="450" height="450" class="image" alt="Responsive image">
+                            <!--<img src="<% out.print(s.getUserImage()); %>" width="450" height="450" class="image" alt="Responsive image">-->
                             <button class="middle btn btn-primary" data-toggle="modal" data-target="#exampleModal">Upload Image</button>
                         </div>
 
