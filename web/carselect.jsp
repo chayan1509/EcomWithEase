@@ -111,10 +111,6 @@
 
         </div>
 
-
-
-
-
         <br/>
         <%@include file="footer.html"%>
         <!-- Button trigger modal -->
@@ -213,7 +209,7 @@
                             </div>
                             <center>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" onclick="window.location.href = 'payment.jsp'">Pay Now</button>
+                                <button type="button" class="btn btn-primary" onclick="window.location.href = 'checkout.jsp'">Pay Now</button>
                             </center>
                         </form>
                     </div>
